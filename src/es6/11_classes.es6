@@ -85,29 +85,19 @@ assert.equal(defCircle.radius, 100);
 {
   class Rectangle {
       constructor(width, height) {
-          this.w = width;
-          this.h = height;
-      }
-      get width() {
-        return this.w;
-      }
-      set width(width) {
-        this.w = width;
-      }
-      get height() {
-        return this.h;
-      }
-      set height(height) {
-        this.h = height;
+          this.width = width;
+          this.height = height;
       }
       get area() {
-        return this.w * this.h;
+        return this.width * this.height;
+      }
+      getVolume(depth) {
+        return this.area * depth;
       }
   };
   var rect = new Rectangle(50, 20);
   assert(rect.area === 1000);
+  assert(rect.getVolume(2) === 2000);
   assert(rect.width === 50);
   assert(rect.height === 20);
-  assert(rect.w === 50);
-  assert(rect.h === 20);
 }

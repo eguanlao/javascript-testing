@@ -1,7 +1,7 @@
 {
   "name": "javascript-testing",
   "version": "1.0.0",
-  "description": "",
+  "description": "A project for testing JavaScript libraries and playing with code.",
   "main": "index.js",
   "directories": {
     "test": "test"
