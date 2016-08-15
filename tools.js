@@ -1,11 +1,10 @@
 "use strict";
 
 module.exports = {
-  foo: function() {
+  foo: function () {
     return "Hello, foo!";
   },
-  bar: function() {
+  bar: function () {
     return "Hello, bar!";
   }
 };
-
